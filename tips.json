@@ -1,0 +1,10 @@
+{
+    "tips": [
+        "Tip 1: Always comment your code.",
+        "Tip 2: Use meaningful variable names.",
+        "Tip 3: Keep functions short and focused.",
+        "Tip 4: Regularly commit your code to version control.",
+        "Tip 5: Write unit tests for your functions.",
+        // Add more tips here up to 365 tips
+    ]
+}
