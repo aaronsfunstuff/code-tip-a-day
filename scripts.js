@@ -13,13 +13,11 @@ const tips = [
     "Tip 12: Break down complex problems into smaller parts.",
     "Tip 13: Stay updated with the latest developments in your technology stack.",
     "Tip 14: Practice pair programming to improve your skills.",
-    "Tip 15: Always back up your work.",
-    // Add more tips here up to 365 tips
+    "Tip 15: Always back up your work."
 ];
 
 const today = new Date();
-const startOfYear = new Date(today.getFullYear(), 0, 0);
-const dayOfYear = Math.floor((today - startOfYear) / 1000 / 60 / 60 / 24);
+const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
 const tipIndex = dayOfYear % tips.length;
 
 document.getElementById('tip').textContent = tips[tipIndex];
